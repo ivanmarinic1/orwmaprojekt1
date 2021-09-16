@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textW13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/predmeti"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_headerFontSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textW14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textW13"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dodaj_predmet"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/eText2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textW14"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/ime_predmeta"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnDodaj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eText2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/eText2"
+        android:backgroundTint="@color/button"
+        android:text="@string/dodaj"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/textW15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/dodaj_predavanja"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerOdaberiPredmet"
+        android:layout_alignParentLeft="true"
+        android:text="ODABERI PREDMET"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerOdaberiPredmet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textW15"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ispis"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinnerOdaberiPredmet"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/eText3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ispis"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/ime_predavanja"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnDodaj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eText3"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/eText3"
+        android:backgroundTint="@color/button"
+        android:text="@string/dodaj" />
+
+    <Button
+        android:id="@+id/btnBack4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/back" />
+
+
+</RelativeLayout>

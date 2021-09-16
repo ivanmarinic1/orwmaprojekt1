@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnPregled"
+        android:layout_alignRight="@+id/btnPregled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/dodaj_studenta"
+        android:textSize="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnPregled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDodaj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/pregled_studenata"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnPrisutnost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPregled"
+        android:layout_alignLeft="@+id/btnPregled"
+        android:layout_alignRight="@+id/btnPregled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/prisutnost"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnPredmet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrisutnost"
+        android:layout_alignLeft="@+id/btnPregled"
+        android:layout_alignRight="@+id/btnPregled"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/predmet"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnPreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPredmet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/button"
+        android:text="PREGLED"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/button"
+        android:text="@string/log_out"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>
